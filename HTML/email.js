@@ -15,7 +15,7 @@ contactForm.onsubmit = (element) => {
   });
   console.log(raw); 
 
-  fetch("http://127.0.0.1:5000/contact", {
+  fetch("/api/contact", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

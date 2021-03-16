@@ -16,7 +16,7 @@ def verify():
     return "app is running"
 
 
-@app.route('/contact', methods=['POST'])
+@app.route('/api/contact', methods=['POST'])
 def post_email():
     request_data = request.json
     pprint(request_data)
